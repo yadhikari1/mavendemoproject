@@ -1,0 +1,44 @@
+package Two;
+
+public class javapractice16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("Simple integer type");
+		int a = 1;
+		int a1=2;
+		System.out.println(a+a1);
+		System.out.println(a-a1);
+		System.out.println(a*a1);
+		System.out.println(a/a1);
+		System.out.println(a%a1);
+		
+		System.out.println(" ");
+		
+		System.out.println("by using functions");
+		
+		
+		Cal(10,20);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	
+	static void Cal(int a,int a1) {
+		System.out.println(a+a1 +"function with parameter without return type");
+	}
+
+}

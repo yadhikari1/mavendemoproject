@@ -1,0 +1,225 @@
+package Two;
+
+public class PracticeArrayday6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//	String [] name =new String [];     both are same 
+//	String names [] = new String []
+
+		// Program 1
+		System.out.println("Program 1");
+
+		String[] names = new String[4];
+		names[0] = "Ram";
+		names[1] = "Syam";
+		names[2] = "Sita";
+		names[3] = "Radha";
+
+		// array stores the elements by index
+		System.out.println(names); // will not print actual results will give reference
+									// [Ljava.lang.String;@2c8d66b2
+
+		System.out.println(names[1]);
+		System.out.println(names[2]);
+
+		System.out.println(names.length);
+
+		for (int i = 0; i < names.length; i++) {
+			// System.out.println(i);
+			System.out.println(names[i]);
+		}
+
+// Program 2
+		System.out.println(" ");
+		System.out.println("program 2");
+
+		String[] cities = { "Ilam", "Fikkal", "Harkate", "kanyam" };
+
+		System.out.println(cities[0]);
+
+		for (int i = 0; i < cities.length; i++) {
+			System.out.println(cities[i]);
+		}
+
+		// Program 3
+
+		System.out.println("program 3");
+
+		int[] numbers = { 10, 20, 30, 40, 50, 60 };
+		System.out.println(numbers[4]);
+
+		System.out.println("Running for loop");
+
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}
+
+		System.out.println("SUM");
+
+		int sum = 0;
+		for (int i = 0; i < numbers.length; i++) {
+
+			sum = sum + numbers[i];
+
+		}
+		System.out.println(sum);
+
+		// Program 4
+		System.out.println(" ");
+		System.out.println("Program 4");
+
+		// split
+
+		String sentence = "I am learning java"; // "I","am","learning","java"
+		String[] sentence1 = sentence.split(" ");
+
+		for (int i = 0; i < sentence1.length; i++) {
+			System.out.println(sentence1[i]);
+		}
+
+		String[] sentence2 = sentence.split("a"); // "I", "m le","rning j","v"
+
+		for (int i = 0; i < sentence2.length; i++) {
+			System.out.println(sentence2[i]);
+		}
+
+		// Program 5 char array
+
+		System.out.println("Char array");
+
+		String city = "Nagpur";
+		char citya[] = city.toCharArray();
+//		System.out.println(citya[1]);
+
+		for (int i = 0; i < citya.length; i++) {
+			System.out.println(citya[i]);
+		}
+
+		// Program 6
+		System.out.println("for-each loop");
+		int age[] = { 15, 20, 25, 30 };
+
+		for (int a : age) {
+			System.out.println(a);
+		}
+
+		// for string
+
+		String[] nam = { "amol", "sita", "ajya", "radha" };
+		for (String b : nam) {
+			System.out.println(b);
+		}
+
+		// char
+		char[] nam1 = { 'a', 'm', 'o', 'l' };
+		String rev = "";
+		for (char c : nam1) {
+			rev = rev + c;
+		}
+		System.out.println(rev);
+
+		// Program 7
+
+		int Numbers[] = { 10, 20, 30, 40, 50, 60 };
+		int sum1 = 0;
+		float avg = 0;
+		for (int d : Numbers) {
+			System.out.println(d);
+			sum1 = sum1 + d;
+			avg = sum1 / Numbers.length;
+		}
+		System.out.println(sum1);
+		System.out.println(avg);
+
+		// Program 8
+
+		int[][] matrix = { { 10, 20, 30 }, { 11, 22, 33 } };
+		System.out.println(matrix[1][0]);
+
+		System.out.println("  ");
+
+		System.out.println(" ");
+
+		// PRACTICE
+
+		System.out.println("practice");
+
+		// program 1
+
+		int[] numverb = new int[3];
+		numverb[0] = 10;
+		numverb[1] = 15;
+		numverb[2] = 20;
+
+		System.out.println(numverb[1]); // 15
+		
+		System.out.println("running loop");
+		
+		for (int i = 0; i < numverb.length; i++) {
+//	 System.out.println(i); // index numbers
+
+			System.out.println(numverb[i]);
+		}
+
+		
+		System.out.println("SUM");
+//program b SUM
+		int [] no= {10,20,30,40,50,60};
+		int sum2=0;
+		for (int i=0; i<no.length;i++) {
+			sum2=sum2+no[i];
+		}
+		System.out.println(sum2);
+		
+		//average
+		float avg1=0;
+		for (int i=0;i<no.length;i++) {
+			avg1=sum2/no.length;
+		}
+		System.out.println(avg1);
+		
+		
+		//split
+		System.out.println("SPLIT");
+		String split="I am live in Ilam.";
+		String [] split1=split.split("i"); //"I am l","ve", "n Ilam"
+		
+		for (int i=0; i< split1.length;i++) {
+			System.out.println(split1[i]);
+		}
+		
+		//charArray  Character from string 
+		System.out.println("CharArray");
+		String Char ="Kentucky";
+		char [] Char1=Char.toCharArray();
+		for (int i=0; i<Char1.length;i++) {
+			System.out.println(Char1[i]);
+		}
+		
+		System.out.println("for-each loop");
+		
+		int []A= {1,2,32,5,4,2};
+		for (int x:A) {
+			System.out.println(x);
+		}
+		
+		String [] City= {"Lexington","Richmond","Marion"};
+		for(String y:City) {
+			System.out.println(y);
+		}
+		
+		
+		//char to string using 
+		
+		char []ch= {'K','e','n','t','u','c','k','y'};
+		String rev3="";
+		for (int i=0; i<ch.length;i++) {
+			rev3=rev3+ch[i];
+	
+		}System.out.println(rev3);
+		
+	}
+
+}

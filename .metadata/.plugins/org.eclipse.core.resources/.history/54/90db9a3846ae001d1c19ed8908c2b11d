@@ -1,0 +1,112 @@
+package Two;
+
+public class javapractice16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Simple integer type");
+		int a = 1;
+		int a1 = 2;
+		System.out.println(a + a1);
+		System.out.println(a - a1);
+		System.out.println(a * a1);
+		System.out.println(a / a1);
+		System.out.println(a % a1);
+
+		System.out.println(" ");
+
+		System.out.println("by using functions");
+
+		CalA();
+		CalA();
+		CalA();
+
+		System.out.println(" ");
+
+		Cal(10, 20);
+		Cal(11, 12);
+
+		System.out.println("Function with parameter with return type");
+		int a2 = CalB(5, 5);
+		System.out.println(a2);
+		System.out.println(CalB(10, 10));
+
+		System.out.println("Relational Operator");
+		int b = 10;
+		int b1 = 15;
+		System.out.println(b > b1);
+		System.out.println(b < b1);
+		System.out.println(b == b1);
+		System.out.println(b != b1);
+		System.out.println(b >= b1);
+		System.out.println(b <= b1);
+
+		System.out.println(" ");
+		System.out.println("Logical operator");
+		System.out.println(" ");
+		System.out.println("&&");
+
+		System.out.println(1 == 1 && 1 != 2);
+
+		System.out.println(1 > 0 && 1 > 2);
+
+		System.out.println(11 != 11 && 12 <= 13);
+
+		System.out.println(11 == 2 && 12 >= 14);
+
+		System.out.println(" ");
+
+		System.out.println("conditional operator");
+
+		int aa = 9;
+		int bb = 10;
+		if (a < b) {
+			System.out.println("aa is greater");
+		} else {
+			System.out.println("bb is greater");
+		}
+		// second example of conditional operator
+
+		// third example of conditional operator
+		System.out.println("third example");
+
+		int Marks = 92;
+		if (Marks > 90) {
+			System.out.println("Grade A");
+		}
+		if (Marks > 70) {
+			System.out.println("Grade B");
+		}
+		if (Marks > 50) {
+			System.out.println("Grade C");
+		}
+
+	}
+
+	static void CalA() {
+		System.out.println(2 + 2); // line 22 to 24
+	}
+
+	static void Cal(int a, int a1) {
+		System.out.println(a + a1 + "   ->function with parameter without return type"); // line 27 to 30
+		System.out.println(a - a1);
+		System.out.println(a / a1);
+		System.out.println(a * a1);
+		System.out.println(a % a1);
+	}
+
+	static int CalB(int a, int a1) { // line 32 to 35
+		return a + a1;
+
+	}
+
+	static int CalC(int a, int a1) {
+		return a - a1;
+	}
+
+	static int CalD(int a, int a1) {
+		return a * a1;
+
+	}
+}

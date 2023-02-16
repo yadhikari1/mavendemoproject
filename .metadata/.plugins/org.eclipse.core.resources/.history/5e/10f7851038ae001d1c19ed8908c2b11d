@@ -1,0 +1,64 @@
+package Two;
+
+public class javapractice16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("Simple integer type");
+		int a = 1;
+		int a1=2;
+		System.out.println(a+a1);
+		System.out.println(a-a1);
+		System.out.println(a*a1);
+		System.out.println(a/a1);
+		System.out.println(a%a1);
+		
+		System.out.println(" ");
+		
+		System.out.println("by using functions");
+		
+		CalA();
+		CalA();
+		CalA();
+
+		
+		System.out.println(" ");
+
+		Cal(10,20);
+		Cal (11,12);
+		
+		System.out.println("Function with parameter with return type");
+		int a2=CalB(5,5);
+		System.out.println(a2);
+		System.out.println(CalB(10,10));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	static void CalA() {
+		System.out.println(2+2);
+	}
+	
+	static void Cal(int a,int a1) {
+		System.out.println(a+a1 +"   ->function with parameter without return type");
+		System.out.println(a-a1);
+		System.out.println(a/a1);
+		System.out.println(a*a1);
+		System.out.println(a%a1);
+	}
+	
+	 static int CalB(int a , int a1) {
+	return a+a1;
+	 
+	 }
+}

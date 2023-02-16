@@ -1,0 +1,26 @@
+package Two;
+
+public class multidimentialarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[][][] t1 = { { { 10, 11, 12 }, { 13, 14, 15 } }, { { 16, 17, 18 }, { 19, 20, 21 } } };
+
+		for (int[][] q1 : t1) {
+			for (int[] q2 : q1) {
+				for (int q3 : q2) {
+					System.out.println(q3);
+				}
+			}
+		}
+		
+		
+		
+		
+		int [] a= {10,11,12,13};
+		System.out.println(a.length);
+
+	}
+
+}
